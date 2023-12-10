@@ -1,0 +1,14 @@
+# Random data generation and data visualization
+import numpy as np
+import matplotlib.pyplot as plt
+from numpy.random import randn
+from numpy.random import seed
+
+# a random number generator
+seed(10)
+data_1 = randn(1500) * 15 + 85
+data_2 =  data_1 +(randn(1500) * 5 + 75)
+
+print('data_1--> mean=%.4f, stdv=%.4f, var=%.4f' % (np.mean(data_1), np.std(data_1), np.var(data_1)))
+print('data_2--> mean=%.4f, stdv=%.4f, var=%.4f\n' % (np.mean(data_2), np.std(data_2), np.var(data_2)))
+  
